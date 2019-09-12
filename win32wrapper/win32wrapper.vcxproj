@@ -47,7 +47,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>fteo_win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>fteo\win32++;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -73,12 +73,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\win32++_fteo\esviewer.cpp" />
-    <ClCompile Include="..\win32++_fteo\MyStatusBar.cpp" />
+    <ClCompile Include="..\fteo\win32++\esviewer.cpp" />
+    <ClCompile Include="..\fteo\win32++\MyStatusBar.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\win32++_fteo\esviewer.h" />
-    <ClInclude Include="..\win32++_fteo\MyStatusBar.h" />
+    <ClInclude Include="..\fteo\win32++\esviewer.h" />
+    <ClInclude Include="..\fteo\win32++\MyStatusBar.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

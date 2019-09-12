@@ -18,18 +18,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\win32++_fteo\esviewer.cpp">
+    <ClCompile Include="..\fteo\win32++\esviewer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\win32++_fteo\MyStatusBar.cpp">
+    <ClCompile Include="..\fteo\win32++\MyStatusBar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\win32++_fteo\esviewer.h">
+    <ClInclude Include="..\fteo\win32++\MyStatusBar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\win32++_fteo\MyStatusBar.h">
+    <ClInclude Include="..\fteo\win32++\esviewer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
