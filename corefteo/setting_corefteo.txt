@@ -1,0 +1,21 @@
+
+Name:
+corefteo 
+
+
+Output:
+C:\Program Files\Fixosoft\fteo\lib\$(ConfigurationName)
+
+
+Intermediate
+$(SolutionDir)\tmp\$(ProjectName)\$(ConfigurationName)
+
+
+
+Include directories:
+"$(SolutionDir)\..\fteo\include";"$(SolutionDir)\..\dxflib"
+
+
+Prepocessor
+
+DISABLE_CVSID;WIN32
