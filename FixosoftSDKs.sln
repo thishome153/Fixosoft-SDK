@@ -14,6 +14,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "corefteo", "corefteo\coreft
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libdxfrw", "libdxfrw-0.6.3\vs2013\libdxfrw.vcxproj", "{357A8016-9AD4-47EF-B23C-2071C264793B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpl", "cpl\cpl.vcxproj", "{2A098437-6794-4069-ADC3-21B10BB7D448}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -40,6 +42,12 @@ Global
 		{357A8016-9AD4-47EF-B23C-2071C264793B}.Release|Win32.ActiveCfg = Release|Win32
 		{357A8016-9AD4-47EF-B23C-2071C264793B}.Release|Win32.Build.0 = Release|Win32
 		{357A8016-9AD4-47EF-B23C-2071C264793B}.Release|x64.ActiveCfg = Release|Win32
+		{2A098437-6794-4069-ADC3-21B10BB7D448}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2A098437-6794-4069-ADC3-21B10BB7D448}.Debug|Win32.Build.0 = Debug|Win32
+		{2A098437-6794-4069-ADC3-21B10BB7D448}.Debug|x64.ActiveCfg = Debug|Win32
+		{2A098437-6794-4069-ADC3-21B10BB7D448}.Release|Win32.ActiveCfg = Release|Win32
+		{2A098437-6794-4069-ADC3-21B10BB7D448}.Release|Win32.Build.0 = Release|Win32
+		{2A098437-6794-4069-ADC3-21B10BB7D448}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

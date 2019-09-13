@@ -13,17 +13,18 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2A098437-6794-4069-ADC3-21B10BB7D448}</ProjectGuid>
     <RootNamespace>cpl</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -37,10 +38,10 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <_ProjectFileVersion>15.0.27924.0</_ProjectFileVersion>
+    <_ProjectFileVersion>16.0.29124.152</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>C:\Program Files\Fixosoft\fteo\lib\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)\lib\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)\tmp\$(ProjectName)\$(Configuration)\</IntDir>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules />
@@ -82,25 +83,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\cpl\cplstring.cpp" />
-    <ClCompile Include="..\..\cpl\cpl_conv.cpp" />
-    <ClCompile Include="..\..\cpl\cpl_csv.cpp" />
-    <ClCompile Include="..\..\cpl\cpl_dir.cpp" />
-    <ClCompile Include="..\..\cpl\cpl_error.cpp" />
-    <ClCompile Include="..\..\cpl\cpl_findfile.cpp" />
-    <ClCompile Include="..\..\cpl\cpl_minixml.cpp" />
-    <ClCompile Include="..\..\cpl\cpl_multiproc.cpp" />
-    <ClCompile Include="..\..\cpl\cpl_path.cpp" />
-    <ClCompile Include="..\..\cpl\cpl_string.cpp" />
-    <ClCompile Include="..\..\cpl\cpl_vsil.cpp" />
-    <ClCompile Include="..\..\cpl\cpl_vsil_unix_stdio_64.cpp" />
-    <ClCompile Include="..\..\cpl\cpl_vsil_win32.cpp" />
-    <ClCompile Include="..\..\cpl\cpl_vsisimple.cpp" />
-    <ClCompile Include="..\..\cpl\cpl_vsi_mem.cpp" />
+    <ClCompile Include="CPL_all_in_one.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\cpl\cpl_config.h" />
+    <ClInclude Include="cpl_config.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

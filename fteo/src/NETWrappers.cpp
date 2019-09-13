@@ -7,37 +7,37 @@ namespace fteo
 {
 	namespace NETWrappers
 	{
-  // ANSI char в управляемый string:
-   System::String ^  CharToString(char *str)
-		 {
-			 if (!str) return L"";
-			 using namespace System::Runtime::InteropServices;
-			 System::String^ g = Marshal::PtrToStringAnsi((System::IntPtr)str);
-			 
-          return  g;
-		 }
+		// ANSI char в управляемый string:
+		System::String^ CharToString(char* str)
+		{
+			if (!str) return L"";
+			using namespace System::Runtime::InteropServices;
+			System::String^ g = Marshal::PtrToStringAnsi((System::IntPtr)str);
 
-// ANSI char в управляемый string:	
-//Эта намного проще, без маршаллов:
-    System::String ^  CharToString2(char *str)
-		 {
-		 if (!str) return L"";
-		 System::String^ g = gcnew System::String(str);
-          return  g;
-		 
-	}
+			return  g;
+		}
 
-	char*             StringtoChar(System::String ^ s) 		 // Охуеешь с ваших строк....
-	{
-		using namespace System::Runtime::InteropServices;
-		
-		return (char*) Marshal::StringToHGlobalAnsi(s).ToPointer();
+		// ANSI char в управляемый string:	
+		//Эта намного проще, без маршаллов:
+		System::String^ CharToString2(char* str)
+		{
+			if (!str) return L"";
+			System::String^ g = gcnew System::String(str);
+			return  g;
 
-	}
+		}
 
+		char* StringtoChar(System::String^ s) 		 // Охуеешь с ваших строк....
+		{
+			using namespace System::Runtime::InteropServices;
 
+			return (char*)Marshal::StringToHGlobalAnsi(s).ToPointer();
+
+		}
 
 
 
- } // namespace 
+
+
+	} // namespace 
 }
