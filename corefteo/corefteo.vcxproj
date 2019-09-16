@@ -83,6 +83,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\dxflib\dl_dxf.cpp" />
+    <ClCompile Include="..\dxflib\dl_writer_ascii.cpp" />
     <ClCompile Include="..\fteo\src\CadWorks.cpp" />
     <ClCompile Include="..\fteo\src\fteo_base.cpp" />
     <ClCompile Include="..\fteo\src\fteo_cpl.cpp" />
@@ -92,6 +94,8 @@
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\dxflib\dl_writer.h" />
+    <ClInclude Include="..\dxflib\dl_writer_ascii.h" />
     <ClInclude Include="..\fteo\include\fteo_core.h" />
     <ClInclude Include="..\fteo\include\fteo_cpl.h" />
     <ClInclude Include="..\fteo\include\fteo_mif.h" />

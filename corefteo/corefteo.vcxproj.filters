@@ -36,6 +36,12 @@
     <ClCompile Include="..\fteo\src\fteo_mif.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\dxflib\dl_dxf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dxflib\dl_writer_ascii.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -48,6 +54,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\fteo\include\fteo_mif.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dxflib\dl_writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dxflib\dl_writer_ascii.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
