@@ -7,8 +7,8 @@
 #define HAVE_VSNPRINTF
 #define vsnprintf _vsnprintf
 
-#define HAVE_SNPRINTF
-#define snprintf _snprintf
+//#define HAVE_SNPRINTF
+//#define snprintf _snprintf
 
 /* Define if you have the ANSI C header files.  */
 #ifndef STDC_HEADERS
