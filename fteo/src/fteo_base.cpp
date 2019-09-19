@@ -49,9 +49,9 @@ TPoint::~TPoint()
 	{  //Вот в таком виде
 		this->Name = "NewTmyPoint";
 		//Получаем deprecated conversion from string constant to 'char*' [-Wwrite-strings]|
-		//this->x = 0;
-		//this->y = 0;
-		//this->z = 0;
+		this->NewOrd->x = 0;
+		this->NewOrd->y = 0;
+		this->NewOrd->z = 0;
 		this->id = 0;
 		this->Parent_id = -1;
 

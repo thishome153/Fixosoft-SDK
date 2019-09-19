@@ -21,6 +21,9 @@
     <ClCompile Include="CPL_all_in_one.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cplstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">

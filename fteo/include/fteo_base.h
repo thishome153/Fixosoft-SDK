@@ -186,11 +186,6 @@ class  Envelope //Simple container for a bounding region.
 //====================================================================
 //
 // ----Класс  Список точек---
- //надо бы его сделать private, чтобы не путался в других модулях
-
-      //class PointList: public std::list<TMyPoint> {};
-
-// ----Класс  Список точек2---
  	class TMyPoints
 	{
     //friend class TMyPoint; // Это необязательно, для отработки

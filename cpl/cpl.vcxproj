@@ -83,6 +83,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cplstring.cpp" />
     <ClCompile Include="CPL_all_in_one.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>

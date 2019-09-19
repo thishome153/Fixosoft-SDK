@@ -40,6 +40,7 @@ dxfRW::dxfRW(const char* name){
     applyExt = false;
     elParts = 128; //parts munber when convert ellipse to polyline
 }
+
 dxfRW::~dxfRW(){
     if (reader != NULL)
         delete reader;
