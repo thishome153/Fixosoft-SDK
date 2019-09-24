@@ -49,6 +49,9 @@ TPoint::~TPoint()
 	{  //Вот в таком виде
 		this->Name = "NewTmyPoint";
 		//Получаем deprecated conversion from string constant to 'char*' [-Wwrite-strings]|
+		this->OldOrd = new TOrdinate();
+		this->NewOrd = new TOrdinate();
+
 		this->NewOrd->x = 0;
 		this->NewOrd->y = 0;
 		this->NewOrd->z = 0;
@@ -56,8 +59,6 @@ TPoint::~TPoint()
 		this->Parent_id = -1;
 
 		this->Status = 0; // new
-        this->OldOrd = new TOrdinate();
-        this->NewOrd = new TOrdinate();
         double TextX = NewOrd->x;
 	}
 

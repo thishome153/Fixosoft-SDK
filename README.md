@@ -6,7 +6,7 @@ My SDK for development - set of static libraries for further usage:
 
 by José F. Soriano, rallazz@gmail.com   
  
-### corefteo      - static library, implements "fteo" framework. 
+### corefteo      - static library, implements "fteo" framework - set of classes. 
  -Native, std:: (no CLR )
 
 ### win32Wrapper  - static library, implements win32 window
