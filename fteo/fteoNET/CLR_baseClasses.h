@@ -11,7 +11,7 @@
 //////////////////////////////////////////////////////////////////
 
 #include "fteo_core.h"
-//#include "fteo/include/CadWorks.h"
+
 namespace fteo {
 	namespace NET {
 
@@ -64,7 +64,30 @@ namespace fteo {
 				void set(System::String^ value) { this->API->Name = StringtoChar(value); this->API->changed = true; }
 			}
 		};
+
 		//////////////////////////////////////////////////////////////////////////////////////
+		
+		/*public class MyClass
+		{
+		public:
+			MyClass();
+			~MyClass();
+
+		private:
+
+		};
+
+		MyClass::MyClass()
+		{
+		}
+
+		MyClass::~MyClass()
+		{
+		}
+	
+		*/
+		
+		
 		//TMyPoints wrapper
 		public ref class wr_TMyPoints
 		{
