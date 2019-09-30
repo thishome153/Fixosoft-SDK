@@ -29,10 +29,11 @@ namespace fteo
 	 public: 
        TextWriter(bool writepointpref, double deltageopoint, char *filename);
                 void SaveAsDxf(void *Entity);
+				int SaveBodyToFile(unsigned long cbData, unsigned char* pbData);
       public:   void SaveAsFteo15(TMyPoints *Entity);//TMyPoints as  #Fixosoft NumXYZD data format V2015
        //void SaveAsFteo15(void *Entity);  // #Fixosoft NumXYZD data format V2015
-
   };
+
 
 //TechnoCAD CSV 
 //'Контур;Префикс номера;Номер;Старый X;Старый Y;Новый X;Новый Y;Метод определения;Формула;Радиус;Погрешность;Описание закрепления'
@@ -96,8 +97,10 @@ public:
      private: bool parseCSVContour(std::string FileString, TMyContours* res);
 			  bool parseCSVContour(char *FileString, TMyContours* res);
 	 public:
+
 		 TextReader();
 		 char *ClassName;// = "Fixosoft TextReader";
+			  int  ReadFileToVector(const char* filename, std::vector<unsigned char>& buffer);
 	  TMyContours *ImportNXYZD2015File(const char *pszFname);
       TMyPoints   *Import_NikonCoord(char *FileName);
 	  TMyContours *Read_dxf(const char *pszFname);
