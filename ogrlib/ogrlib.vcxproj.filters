@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\OGR">
+      <UniqueIdentifier>{32290a5c-bf29-4f63-af29-e6dd91d9f290}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OGR">
+      <UniqueIdentifier>{3d6f41db-b8c3-4b8c-920b-e076184b9b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CPL">
+      <UniqueIdentifier>{1c718c3e-4115-475a-9345-e529444d838d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CPL">
+      <UniqueIdentifier>{3a47a6b2-0d66-4905-acd9-559a995a3b8c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cpl\cpl_config.h">
+      <Filter>Header Files\CPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cpl\stdafx.h">
+      <Filter>Header Files\CPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ogr\ogr_core.h">
+      <Filter>Header Files\OGR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ogr\ogr_geos.h">
+      <Filter>Header Files\OGR</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cplstring.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cplgetsymbol.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cpl_vsisimple.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cpl_vsil_unix_stdio_64.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cpl_vsil.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cpl_vsi_mem.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cpl_string.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cpl_path.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cpl_minixml.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cpl_getexecpath.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cpl_findfile.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cpl_error.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cpl_dir.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cpl_csv.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpl\cpl_conv.cpp">
+      <Filter>Source Files\CPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ogr\ogrutils.cpp">
+      <Filter>Source Files\OGR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ogr\ogrlayer.cpp">
+      <Filter>Source Files\OGR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ogr\ogr_api.cpp">
+      <Filter>Source Files\OGR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ogr\ogrfeature.cpp">
+      <Filter>Source Files\OGR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ogr\ogrpoint.cpp">
+      <Filter>Source Files\OGR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ogr\ogrgeometry.cpp">
+      <Filter>Source Files\OGR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ogr\ogrmultipolygon.cpp">
+      <Filter>Source Files\OGR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ogr\ogrmultipoint.cpp">
+      <Filter>Source Files\OGR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ogr\ogrpolygon.cpp">
+      <Filter>Source Files\OGR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ogr\ogrsurface.cpp">
+      <Filter>Source Files\OGR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ogr\ogrfeaturedefn.cpp">
+      <Filter>Source Files\OGR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ogr\ogrgeometrycollection.cpp">
+      <Filter>Source Files\OGR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ogr\ogr_attrind.cpp">
+      <Filter>Source Files\OGR</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

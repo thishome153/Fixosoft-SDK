@@ -16,6 +16,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libdxfrw", "libdxfrw-0.6.3\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpl", "cpl\cpl.vcxproj", "{2A098437-6794-4069-ADC3-21B10BB7D448}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ogrlib", "ogrlib\ogrlib.vcxproj", "{51E5C10D-A454-48E9-B51D-121E98183783}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -48,6 +50,14 @@ Global
 		{2A098437-6794-4069-ADC3-21B10BB7D448}.Release|Win32.ActiveCfg = Release|Win32
 		{2A098437-6794-4069-ADC3-21B10BB7D448}.Release|Win32.Build.0 = Release|Win32
 		{2A098437-6794-4069-ADC3-21B10BB7D448}.Release|x64.ActiveCfg = Release|Win32
+		{51E5C10D-A454-48E9-B51D-121E98183783}.Debug|Win32.ActiveCfg = Debug|Win32
+		{51E5C10D-A454-48E9-B51D-121E98183783}.Debug|Win32.Build.0 = Debug|Win32
+		{51E5C10D-A454-48E9-B51D-121E98183783}.Debug|x64.ActiveCfg = Debug|x64
+		{51E5C10D-A454-48E9-B51D-121E98183783}.Debug|x64.Build.0 = Debug|x64
+		{51E5C10D-A454-48E9-B51D-121E98183783}.Release|Win32.ActiveCfg = Release|Win32
+		{51E5C10D-A454-48E9-B51D-121E98183783}.Release|Win32.Build.0 = Release|Win32
+		{51E5C10D-A454-48E9-B51D-121E98183783}.Release|x64.ActiveCfg = Release|x64
+		{51E5C10D-A454-48E9-B51D-121E98183783}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

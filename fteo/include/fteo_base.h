@@ -17,6 +17,7 @@
 
 
 #include <list>
+#include <xstring>
 
 #ifndef  BASECLASSES_H
 #define  BASECLASSES_H
@@ -360,7 +361,7 @@ class  Envelope //Simple container for a bounding region.
 
 
 
-int   str2int (const std::string &str);  //  STl строку в integer
+int   str2int (const std::string  &str);  //  STl строку в integer
 char *str2char(std::string src); //  STl строку в native char*
 
  }

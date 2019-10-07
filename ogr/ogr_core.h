@@ -97,6 +97,7 @@ typedef int OGRErr;
 #define OGRERR_UNSUPPORTED_SRS     7
 
 typedef int     OGRBoolean;
+typedef int MYNewBoolNotWellKnown;
 
 /* -------------------------------------------------------------------- */
 /*      ogr_geometry.h related definitions.                             */

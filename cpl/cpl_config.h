@@ -5,7 +5,7 @@
 /* Define if you have the vprintf function.  */
 #define HAVE_VPRINTF
 #define HAVE_VSNPRINTF
-#define vsnprintf _vsnprintf
+//#define vsnprintf _vsnprintf
 
 //#define HAVE_SNPRINTF
 //#define snprintf _snprintf
