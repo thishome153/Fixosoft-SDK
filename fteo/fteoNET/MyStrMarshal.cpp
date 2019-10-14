@@ -23,8 +23,7 @@ char* StringtoChar(System::String^ s)
 	return (char*)Marshal::StringToHGlobalAnsi(s).ToPointer();
 }
 
-// Для nonUnicode:
-// А эта хуйня понадобилась? чтобы из недр WINAPI получать строки .NET:
+// Multibyte string to managed string:
 System::String^ LPTSTRToString(LPTSTR str)
 {
 	using namespace Runtime::InteropServices;
@@ -32,7 +31,16 @@ System::String^ LPTSTRToString(LPTSTR str)
 	return  g;
 }
 
-// ANSI char в управляемый string:
+// native c++ string to managed string:
+System::String^ LPSTRToString(LPSTR  str) 		 // Для nonUnicode:
+{
+	using namespace Runtime::InteropServices;
+	String^ g = Marshal::PtrToStringUni((IntPtr)str);
+	return  g;
+}
+
+
+// native c++ string to managed string:
 System::String^ CharToString(char* str)
 {
 	if (!str) return L"";
@@ -41,14 +49,7 @@ System::String^ CharToString(char* str)
 	return  g;
 }
 
-//Чуть Другой тип строк на входе:
-System::String^ LPSTRToString(LPSTR  str) 		 // Для nonUnicode:
-{
-	using namespace Runtime::InteropServices;
-	String^ g = Marshal::PtrToStringUni((IntPtr)str);
-	return  g;
-}
-
+// Multibyte string to std C++ string:
 bool LPWSTRTostd_string(std::string& s, const LPWSTR pw,	UINT codepage )
 {
 	bool res = false;
@@ -76,6 +77,7 @@ bool LPWSTRTostd_string(std::string& s, const LPWSTR pw,	UINT codepage )
 	return res;
 }
 
+// Multibyte string to managed string:
 System::String^ LPWSTRToString(const LPWSTR pw, UINT codepage)
 {
 	std::string converted;
