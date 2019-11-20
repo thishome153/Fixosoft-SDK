@@ -10,7 +10,9 @@ using namespace System; // типы .NET
 #define MarshUtils_h_INCLUDED
 
 
-//  Декларации заголовков функций - интерфейсная часть
+
+
+// Преобразование строки .NET в указатель на строку WINAPI/
  char* StringtoChar(System::String ^ s); 		 // Охуеешь с ваших строк....
  System::String ^ LPTSTRToString(LPTSTR str); 		 // Для Unicode:
  System::String ^ LPSTRToString(LPSTR  str); 		 // Для Unicode:
