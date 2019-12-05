@@ -62,5 +62,8 @@
     <ClInclude Include="..\dxflib\dl_writer_ascii.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\fteo\include\fteo_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

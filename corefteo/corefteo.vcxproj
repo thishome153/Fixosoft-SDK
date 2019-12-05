@@ -98,6 +98,7 @@
   <ItemGroup>
     <ClInclude Include="..\dxflib\dl_writer.h" />
     <ClInclude Include="..\dxflib\dl_writer_ascii.h" />
+    <ClInclude Include="..\fteo\include\fteo_base.h" />
     <ClInclude Include="..\fteo\include\fteo_core.h" />
     <ClInclude Include="..\fteo\include\fteo_cpl.h" />
     <ClInclude Include="..\fteo\include\fteo_mif.h" />
